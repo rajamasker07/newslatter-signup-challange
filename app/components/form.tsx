@@ -1,8 +1,11 @@
 'use client';
 
+import { useUrl } from "nextjs-current-url";
 import React, { useState } from "react";
 
 export default function Form() {
+
+  const url = useUrl();
 
   const [emailValid, setEmailValid] = useState<boolean>(true);
   const validationEmail = (email: string): boolean => {
@@ -15,7 +18,7 @@ export default function Form() {
   };
 
   return (
-    <form method="get" action={ `${window.location.href}/success` }>
+    <form method="get" action={ `${url?.href}/success` }>
       <div className="flex flex-col gap-2">
         <div className="flex flex-row justify-between">
           <label htmlFor="email" className="text-xs text-slate-900">Email Address</label>
