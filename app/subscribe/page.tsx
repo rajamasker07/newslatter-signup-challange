@@ -59,7 +59,7 @@ export default function Page() {
           alt='img-illustration'
           width={100}
           height={100}
-          className='h-auto w-full rounded-b-xl md:hidden lg:hidden xl:hidden'
+          className='h-auto w-full rounded-b-xl md:hidden lg:hidden xl:hidden 2xl:hidden'
         />
       </section>
     </div>
