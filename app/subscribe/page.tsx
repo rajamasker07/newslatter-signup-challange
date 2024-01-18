@@ -15,7 +15,7 @@ export default function Page() {
             Join 60,000+ product manager receving monthly updated on:
           </p>
         </hgroup>
-        <ul className='flex flex-col gap-2 *:justify-start *:text-slate-800 *:has-[li]:inline-flex *:has-[li]:gap-2 *:has-[p]:text-xs'>
+        <ul className='flex flex-col gap-2 *:justify-start *:text-slate-800 *:has-[li]:inline-flex *:has-[li]:items-center *:has-[li]:gap-2 *:has-[p]:text-xs'>
           <li>
             <Image
               src={iconList}
